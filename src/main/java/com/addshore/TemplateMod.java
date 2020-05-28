@@ -4,22 +4,22 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Test1 extends JavaPlugin {
+public class TemplateMod extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Test1 has been invoked!");
+        getLogger().info("TemplateMod has been enabled! :)");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("Test1 has been invoked!");
+        getLogger().info("TemplateMod has been disabled! :(");
     }
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (cmd.getName().equalsIgnoreCase("test1")) {
-            getLogger().info("Test1 command run!");
+        if (cmd.getName().equalsIgnoreCase("testcommand")) {
+            getLogger().info("Test command run! :D");
             return true;
         }
         return false;

@@ -1,11 +1,11 @@
-name: Test1
-author: addshore
+name: TemplateMod
+author: someAuthor
 version: 0.1
-main: com.addshore.Test1
+main: com.addshore.TemplateMod
 
 commands:
   test1:
-    description: This is a test1 command.
-    usage: /test1
-    permission: test1.test1
-    permission-message: You don't have test1
+    description: This is a test command.
+    usage: /testcommand
+    permission: test1.testcommand
+    permission-message: You don't have testcommand
